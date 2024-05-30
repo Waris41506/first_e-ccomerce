@@ -1,0 +1,334 @@
+
+.contanier-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 250vh;
+    position: relative;
+}
+
+.contanier-home .page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #333;
+    position: absolute;
+    top: 0;
+}
+.page .h2{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.page .h2::after{
+    content: " ";
+    position: absolute;
+    top: 60px;
+    width: 240px;
+    background-color: orangered;
+    height: 5px;
+    display: block;
+    left: 400px;
+}
+.contanier-home .page .top{
+    max-width: 1000px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 10px;
+    overflow-x: hidden;
+    transition: 20s ease-in;
+}
+
+.scroll-box{
+    animation: scrolling 20s infinite;
+    display: flex;
+
+}
+
+@keyframes scrolling {
+    10%{
+        transform: translate(0, 0);
+    }
+
+    20%{
+        transform: translate(-10%, 0);
+    }
+
+    30%{
+        transform: translate(-20%, 0);
+    }
+    40%{
+        transform: translate(-40%, 0);
+    }
+    60%{
+        transform: translate(-60%, 0);
+    }
+    70%{
+        transform: translate(-70%, 0);
+    }
+    80%{
+        transform: translate(-80%, 0);
+    }
+    100%{
+        transform: translate(-60%, 0);
+    }
+   
+}
+/* 
+.contanier-home .page span:first-child{
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: 150px;
+    left: -35px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.contanier-home .page span:nth-child(2){
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: 150px;
+    right: -35px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+} */
+
+/* .top::-webkit-scrollbar{
+    width: 7px;
+    position: relative;
+}
+
+.top::-webkit-scrollbar-thumb{
+    background: #333;
+    border-radius: 15px;
+}
+.top::-webkit-scrollbar-track{
+    background: wheat;
+} */
+
+/* @keyframes scrolling{
+    fro
+} */
+
+
+.contanier-home .page .top img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+   margin: 10px;
+}
+.down{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+   
+}
+.contanier-home .right{
+    width: 200px;
+    height: 400px;
+    margin-right: 40px;
+    padding: 12px;
+}
+
+.right h3{
+    margin-top: 10 10px 10px 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.right p{
+    color: #222;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #333;
+    
+}
+.right p:hover{
+    font-size: 20px;
+    transition: .3s;
+    font-weight: bold;
+}
+.contanier-home .left{
+    width: 800px;
+    height: 400px;
+}
+.left .search{
+    width: 100%;
+    background: whitesmoke;
+    border-radius: 15px;
+    padding-left: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 2px 5px #555;
+}
+.search input{
+    width: 90%;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    background: whitesmoke;
+
+}
+.search input::placeholder{
+    font-size: 20px;
+
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.products img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 5px 2px 5px #555;
+    transition: .3s;
+    
+
+}
+.box-icon{
+    display: flex;
+    margin: 5px;
+}
+ .icon{
+    display: flex;
+    margin-left: 23px;
+    cursor: pointer;
+}
+
+
+.products .img-box p,button{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.products .img-box button{
+    background: orangered;
+    margin-top: 10px;
+    margin-right: 25px;
+    border: 0;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    width: 190px;
+    cursor: pointer;
+    transition: .3s;
+}
+.products .img-box button:hover{
+    box-shadow: 5px 5px 10px #555;
+    transform: scale(1.1)
+
+}
+.products img:hover{
+    box-shadow: 5px 5px 10px #555;
+    transform: scale(1.1)
+    
+}
+
+@media (max-width: 600px){
+    .contanier-home{
+        height: 600vh;
+    }
+    .products{
+        max-width: 380px;
+        margin-left: 20px;
+        flex-direction: column;
+        margin-left: 370px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        position: absolute;
+        top: 440px;
+        right: 20px;
+        
+    }
+    .search input{
+        width: 300px;
+      
+    }
+
+   
+    .left .search{
+        width: 400px;
+        background: whitesmoke;
+        border-radius: 15px;
+        padding-left: 10px;
+        margin-left: 50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .contanier-home .right{
+        width: 200px;
+        height: 400px;
+        position: absolute;
+        top: 460px;
+        left: 20px;
+        padding: 12px;
+        
+    }
+    
+    .contanier-home .page .top{
+        max-width: 300px;
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        padding: 10px;
+        overflow-x: hidden;
+        transition: 20s ease-in;
+
+    }
+    .down{
+        max-width: 480px;
+       
+    }
+   
+   
+    
+    .page .h2::after{
+        content: " ";
+        position: absolute;
+        top: 60px;
+        width: 240px;
+        background-color: orangered;
+        height: 5px;
+        display: block;
+        left: 120px;
+    }
+    
+}
